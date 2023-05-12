@@ -1,5 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
+    <!-- screen title -->
     <ion-title>
       HOME
     </ion-title>
@@ -7,5 +8,18 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
- <ion-button routerLink="/product">Show Product</ion-button>
+  <!-- ion list created -->
+  <ion-list>
+    <!-- ion item created -->
+    <ion-item>
+      <!-- a label created to inform user -->
+      <ion-label>Product Name</ion-label>
+      <!-- product text field created -->
+      <ion-input placeholder='Enter a product name...' id="productText"></ion-input>
+    </ion-item>
+  </ion-list>
+  <!-- ion button and router link used for route to next url -->
+  <!-- name of the button assigned by a variable 'productButton' -->
+  <ion-button routerLink="../product" expand="full">{{productButton}}</ion-button>
 </ion-content>
+
